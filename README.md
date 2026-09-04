@@ -1,4 +1,4 @@
-# Harshit Kumar — Portfolio
+# Harshit Kumar — Resume Portfolio
 
 Built with **React + Vite**.
 
