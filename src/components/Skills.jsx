@@ -22,7 +22,7 @@ export default function Skills({ skills }) {
   const categories = [...new Set(skills.map(s => s.category))];
 
   return (
-    <section id="skills" style={{
+    <section id="skills" className="section-pad" style={{
       padding: "8rem 6vw",
       background: `
         radial-gradient(ellipse 50% 40% at 0% 50%, rgba(27,58,92,0.3) 0%, transparent 60%),
@@ -49,7 +49,7 @@ export default function Skills({ skills }) {
         ))}
       </div>
 
-      <div style={{
+      <div className="skills-grid" style={{
         display: "grid",
         gridTemplateColumns: "repeat(auto-fill, minmax(160px, 1fr))",
         gap: "1rem",

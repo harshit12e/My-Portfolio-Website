@@ -5,11 +5,8 @@ export default function Hero({ data }) {
   const { name, title, summary, contact } = data;
 
   return (
-    <section id="about" style={{
+    <section id="about" className="hero-section" style={{
       minHeight: "100vh",
-      display: "grid",
-      gridTemplateColumns: "1fr 1fr",
-      alignItems: "center",
       padding: "0 6vw",
       gap: "4rem",
       position: "relative",
@@ -109,13 +106,12 @@ export default function Hero({ data }) {
       </div>
 
       {/* Right — Photo */}
-      <div className="fade-up" style={{
+      <div className="fade-up hero-photo" style={{
         animationDelay: "0.4s",
         position: "relative",
         display: "flex",
         justifyContent: "center",
         alignItems: "flex-end",
-        height: "100vh",
         overflow: "hidden",
       }}>
         {/* Decorative ring */}
@@ -137,7 +133,7 @@ export default function Hero({ data }) {
         }} />
 
         {/* Photo container */}
-        <div style={{
+        <div className="hero-photo-frame" style={{
           position: "relative",
           width: "100%",
           maxWidth: "440px",
@@ -178,7 +174,7 @@ export default function Hero({ data }) {
       </div>
 
       {/* Scroll hint */}
-      <div style={{
+      <div className="scroll-hint" style={{
         position: "absolute", bottom: "2rem", left: "50%", transform: "translateX(-50%)",
         display: "flex", flexDirection: "column", alignItems: "center", gap: "0.5rem",
         color: "var(--text-muted)", fontSize: "0.7rem", letterSpacing: "0.15em",

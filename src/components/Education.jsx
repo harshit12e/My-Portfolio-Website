@@ -3,7 +3,7 @@ import SectionHeader from "./SectionHeader";
 
 export default function Education({ education, certifications }) {
   return (
-    <section id="education" style={{
+    <section id="education" className="section-pad" style={{
       padding: "8rem 6vw",
       background: `
         radial-gradient(ellipse 50% 40% at 30% 80%, rgba(201,168,76,0.05) 0%, transparent 60%),
@@ -12,7 +12,7 @@ export default function Education({ education, certifications }) {
     }}>
       <SectionHeader icon="🎓" title="Education" subtitle="Academic foundations" />
 
-      <div style={{
+      <div className="edu-grid" style={{
         display: "grid",
         gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))",
         gap: "1.5rem",

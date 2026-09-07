@@ -3,7 +3,7 @@ import SectionHeader from "./SectionHeader";
 
 export default function Experience({ experience }) {
   return (
-    <section id="experience" style={{
+    <section id="experience" className="section-pad" style={{
       padding: "8rem 6vw",
       background: `
         radial-gradient(ellipse 60% 50% at 100% 50%, rgba(27,58,92,0.25) 0%, transparent 65%),
@@ -14,10 +14,7 @@ export default function Experience({ experience }) {
 
       <div style={{ display: "flex", flexDirection: "column", gap: "2.5rem" }}>
         {experience.map((job, i) => (
-          <div key={i} style={{
-            display: "grid",
-            gridTemplateColumns: "200px 1fr",
-            gap: "2rem",
+          <div key={i} className="exp-item" style={{
             animation: "fadeUp 0.6s ease forwards",
             animationDelay: `${i * 0.15}s`,
             opacity: 0,

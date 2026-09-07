@@ -11,7 +11,7 @@ export default function Contact({ contact, interests }) {
   ];
 
   return (
-    <section id="contact" style={{
+    <section id="contact" className="section-pad" style={{
       padding: "8rem 6vw 6rem",
       background: `
         radial-gradient(ellipse 70% 60% at 50% 100%, rgba(27,58,92,0.4) 0%, transparent 70%),
@@ -20,10 +20,7 @@ export default function Contact({ contact, interests }) {
     }}>
       <SectionHeader icon="📬" title="Get In Touch" subtitle="Let's build something great together" />
 
-      <div style={{
-        display: "grid",
-        gridTemplateColumns: "1fr 1fr",
-        gap: "4rem",
+      <div className="contact-grid" style={{
         alignItems: "start",
       }}>
         {/* Contact links */}
